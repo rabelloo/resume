@@ -9,7 +9,10 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: [
+          'ts-loader',
+          { loader: path.resolve('scripts/web-component.js'), },
+        ],
         exclude: /node_modules/,
       },
       {
