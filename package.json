@@ -1,0 +1,39 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Résumé in HTML with custom elements",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-serve",
+    "lint": "tslint src/**/*.ts --fix",
+    "lint:ci": "tslint src/**/*.ts",
+    "test": "jest --watch",
+    "test:ci": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabelloo/resume.git"
+  },
+  "author": "Andre Luiz Rabello <andre.luiz_r@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rabelloo/resume/issues"
+  },
+  "homepage": "https://github.com/rabelloo/resume#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.4.2",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "ts-jest": "^23.1.2",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0",
+    "webpack-serve": "^2.0.2"
+  }
+}
