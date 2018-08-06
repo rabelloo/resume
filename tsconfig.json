@@ -14,6 +14,7 @@
     "allowJs": false,
     "alwaysStrict": true,
     "declaration": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,

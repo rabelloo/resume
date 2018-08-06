@@ -1,8 +1,25 @@
-import { shadowDom } from './helpers';
+import { listen } from './dom-helpers';
 
 export class WebComponent extends HTMLElement {
-  constructor(element: HTMLTemplateElement) {
+  // This will allow init() to be monkey patched by
+  // @Component() decorator with the appropriate shadowDom() call
+  private init: () => void;
+  constructor() {
     super();
-    shadowDom(this, element);
+    this.init();
+  }
+
+  /**
+   * Gets operations for an event
+   * @param name Event to get
+   */
+  protected event<K extends keyof HTMLElementEventMap>(name: K) {
+    return {
+      /**
+       * Listens to an event
+       * @param fn Function to execute when event is emitted
+       */
+      listen: (fn: () => any) => listen(this, name, fn),
+    };
   }
 }
