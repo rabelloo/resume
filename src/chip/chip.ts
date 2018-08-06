@@ -12,6 +12,7 @@ export class Chip extends WebComponent {
   constructor() {
     super();
 
+    // TODO: transform into @Listen(event) decorator
     this.event('click').listen(() => this.onClick());
   }
 
