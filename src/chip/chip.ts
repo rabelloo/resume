@@ -9,6 +9,9 @@ import { Bind } from '../web-component';
 export class Chip extends WebComponent {
   @Bind({ toggle: true }) active: boolean;
 
+  // TODO
+  @Bind() color: string;
+
   constructor() {
     super();
 
