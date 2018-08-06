@@ -24,7 +24,7 @@ function verify(config: IComponentConfig) {
   if (config == null) {
     throw new Error('WebComponent config is required');
   }
-  if (config.template == null) {
+  if (!config.template) {
     throw new Error('WebComponent template is required');
   }
   if (!/^<style>[\w\W]*<\/style>$/.test(config.styles || '')) {
