@@ -1,5 +1,4 @@
-import { Component, WebComponent } from '../web-component';
-import { Bind } from '../web-component';
+import { Bind, Component, Listen, WebComponent } from '../web-component';
 
 @Component({
   selector: 'alr-chip',
@@ -12,13 +11,7 @@ export class Chip extends WebComponent {
   // TODO
   @Bind() color: string;
 
-  constructor() {
-    super();
-
-    // TODO: transform into @Listen(event) decorator
-    this.event('click').listen(() => this.onClick());
-  }
-
+  @Listen('click')
   onClick() {
     this.active = !this.active;
   }
