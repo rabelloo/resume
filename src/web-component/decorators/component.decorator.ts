@@ -1,5 +1,5 @@
-import { shadowDom, template, webComponent } from './helpers';
-import { IComponentConfig, IWebComponentConstructor } from './interfaces';
+import { monkeyPatch, shadowDom, template, webComponent } from '../helpers';
+import { IComponentConfig, IWebComponentConstructor } from '../interfaces';
 
 /**
  * Creates a Web Component with specified configurations
@@ -12,7 +12,9 @@ export function Component(config: IComponentConfig) {
 
   return <T extends IWebComponentConstructor>(constructor: T) => {
     // Monkey patch init, see WebComponent class for more info
-    constructor.prototype.init = function() { shadowDom(this, element); };
+    constructor.prototype.init = monkeyPatch(constructor.prototype.init, ref =>
+      shadowDom(ref, element)
+    );
 
     webComponent(config.selector, constructor);
 

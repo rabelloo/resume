@@ -1,4 +1,4 @@
-import { listen } from './dom-helpers';
+import { listen } from './helpers';
 
 export class WebComponent extends HTMLElement {
   // This will allow init() to be monkey patched by

@@ -1,9 +1,3 @@
-import { WebComponent } from './web-component';
-
-export interface IWebComponentConstructor extends Function {
-  new (...args: any[]): WebComponent;
-}
-
 export interface IComponentConfig {
   /**
    * The element tag or selector the will be used in HTML
@@ -34,12 +28,4 @@ export interface IComponentConfig {
    * 3. '~my-component'  // will assume same path as above
    */
   template: string;
-}
-
-export interface IBindConfig {
-  /**
-   * Whether or not to add and remove attribute
-   * with boolean behavior instead of setting value
-   */
-  toggle?: boolean;
 }
