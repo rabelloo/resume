@@ -5,15 +5,15 @@ module.exports = {
   coverageDirectory: '../coverage',
   coverageThreshold: {
     global: {
-      branches: 100,
-      functions: 100,
-      lines: 100,
-      statements: 100
+      statements: 42.86,
+      branches: 0,
+      lines: 42.11,
+      functions: 3.7,
     }
   },
   globals: {
     'ts-jest': {
-      tsConfigFile: 'tsconfig.test.json'
+      tsConfigFile: '../tsconfig.test.json'
     }
   },
   moduleFileExtensions: [
@@ -21,7 +21,8 @@ module.exports = {
     "js"
   ],
   rootDir: 'src', // acts as if file was inside /src folder
-  testEnvironment: "node",
+  testEnvironment: "jsdom",
+  testURL: 'http://localhost',
   testMatch: [
     '**/*.spec.ts'
   ],
