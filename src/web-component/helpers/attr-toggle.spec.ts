@@ -5,10 +5,7 @@ import { attrToggle } from './attr-toggle';
 jest.mock('./attr-boolean');
 
 describe('attrToggle', () => {
-  const ref = {
-    getAttribute: null,
-    setAttribute: null,
-  } as WebComponent;
+  const ref = {} as WebComponent;
 
   it('should toggle attribute', () => {
     const name = '1';

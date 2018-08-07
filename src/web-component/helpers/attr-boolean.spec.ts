@@ -20,7 +20,6 @@ describe('attrBoolean', () => {
   });
 
   it('should set attribute to empty if value is true', () => {
-    const expected = 2;
     const name = '2';
     const value = true;
     const spyCoerce = spyOn(coerce, 'boolean').and.returnValue(value);
