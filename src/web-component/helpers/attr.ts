@@ -16,5 +16,7 @@ export function attr(ref: WebComponent, name: string, value: any = null): string
     return ref.getAttribute(name);
   }
 
+  // Objects are intentionally not supported
+  // JSON conversion is expensive and does not maintain integrity
   ref.setAttribute(name, `${value}`);
 }

@@ -24,9 +24,9 @@ describe('attrBoolean', () => {
     const name = '2';
     const value = true;
     const spyCoerce = spyOn(coerce, 'boolean').and.returnValue(value);
-    const spy = spyOn(ref, 'setAttribute').and.returnValue(expected);
+    const spy = spyOn(ref, 'setAttribute');
 
-    expect(attrBoolean(ref, name, value)).toBe(expected);
+    expect(attrBoolean(ref, name, value)).toBe(undefined);
     expect(spyCoerce).toHaveBeenCalledTimes(1);
     expect(spyCoerce).toHaveBeenCalledWith(value);
     expect(spy).toHaveBeenCalledTimes(1);
