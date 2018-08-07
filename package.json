@@ -9,7 +9,8 @@
     "lint": "tslint src/**/*.ts --fix",
     "lint:ci": "tslint src/**/*.ts",
     "test": "jest --watch",
-    "test:ci": "jest --coverage"
+    "test:ci": "jest --coverage",
+    "e2e": "echo Not yet implemented"
   },
   "repository": {
     "type": "git",
