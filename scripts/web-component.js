@@ -37,7 +37,7 @@ const getContent = (file, extension) => {
         .renderSync({ file: path.resolve(file) })
         .css
         .toString()
-        .replace(/:host([^ ,{]+)/, ':host($1)')
+        .replace(/:host([^() ,{]+)/g, ':host($1)')
     );
   }
 
