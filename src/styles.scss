@@ -1,4 +1,20 @@
 body {
+  --primary: #303f9f;
+  --primary-light: #666ad1;
+  --primary-dark: #001970;
+  --accent: #00838f;
+  --accent-light: #4fb3bf;
+  --accent-dark: #005662;
+  --warn: #d32f2f;
+
+  --on-primary: rgba(255, 255, 255, .87);
+  --on-primary-medium: rgba(255, 255, 255, .6);
+  --on-primary-disabled: rgba(255, 255, 255, .38);
+  --on-accent: rgba(255, 255, 255, .87);
+  --on-accent-medium: rgba(255, 255, 255, .6);
+  --on-accent-disabled: rgba(255, 255, 255, .38);
+  --on-warn: rgba(255, 255, 255, .87);
+
   box-sizing: border-box;
   background: #fafafa;
   font: {

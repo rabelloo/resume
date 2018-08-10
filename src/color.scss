@@ -1,0 +1,21 @@
+@mixin bg-primary() {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+@mixin color-primary() {
+  color: var(--primary);
+}
+@mixin bg-accent() {
+  background-color: var(--accent);
+  color: var(--on-accent);
+}
+@mixin color-accent() {
+  color: var(--accent);
+}
+@mixin bg-warn() {
+  background-color: var(--warn);
+  color: var(--on-warn);
+}
+@mixin color-warn() {
+  color: var(--warn);
+}

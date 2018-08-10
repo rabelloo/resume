@@ -1,3 +1,4 @@
+import { Color } from '../color/color';
 import { Bind, Component, Listen, WebComponent } from '../web-component';
 
 @Component({
@@ -6,10 +7,10 @@ import { Bind, Component, Listen, WebComponent } from '../web-component';
   template: '~chip',
 })
 export class Chip extends WebComponent {
-  @Bind({ toggle: true }) active: boolean;
+  @Bind({ toggle: true })
+  active: boolean;
 
-  // TODO
-  @Bind() color: string;
+  @Bind() color: Color;
 
   @Listen('click')
   onClick() {
