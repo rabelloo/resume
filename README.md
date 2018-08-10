@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/rabelloo/resume.svg?branch=master)](https://travis-ci.org/rabelloo/resume)
-[![Coverage Status](https://coveralls.io/repos/github/rabelloo/resume/badge.svg)](https://coveralls.io/github/rabelloo/resume)
+[![Coverage Status](https://coveralls.io/repos/github/rabelloo/resume/badge.svg?branch=master)](https://coveralls.io/github/rabelloo/resume?branch=master)
 
 # resume
 Résumé in HTML with custom elements
