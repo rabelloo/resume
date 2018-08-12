@@ -23,7 +23,7 @@ describe('Bind', () => {
     const target = { } as any;
     const key = 'test';
     const value = 1;
-    const spy = (attr as jest.Mock);
+    const spy = attr as jest.Mock;
     spy.mockReturnValueOnce(undefined)
        .mockReturnValueOnce(value);
 
@@ -41,7 +41,7 @@ describe('Bind', () => {
     const target = { } as any;
     const key = 'test';
     const value = 1;
-    const spy = (attrBoolean as jest.Mock);
+    const spy = attrBoolean as jest.Mock;
     spy.mockReturnValueOnce(undefined)
        .mockReturnValueOnce(value);
 

@@ -29,7 +29,7 @@ function verify(config: IComponentConfig) {
   if (!config.template) {
     throw new Error('WebComponent template is required');
   }
-  if (!/^<style>[\w\W]*<\/style>$/.test(config.styles || '')) {
+  if (config.styles != null && !/^<style>[\w\W]*<\/style>$/.test(config.styles)) {
     throw new Error(`
       WebComponent styles must be a string containing either:
       1. An inline HTML style tag
