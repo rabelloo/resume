@@ -19,3 +19,14 @@
 @mixin color-warn() {
   color: var(--warn);
 }
+@mixin attr-color() {
+  &[color="primary"] {
+    @include bg-primary();
+  }
+  &[color="accent"] {
+    @include bg-accent();
+  }
+  &[color="warn"] {
+    @include bg-warn();
+  }
+}
