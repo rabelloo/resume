@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/rabelloo/resume/badge.svg?branch=master)](https://coveralls.io/github/rabelloo/resume?branch=master)
 
 # resume
-Résumé in HTML with custom elements
+Résumé in HTML with Web Components
 
 ## A little tale
 I wanted to update my résumé, but text editors were limiting my creativity and expression. :confused:
