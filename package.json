@@ -9,7 +9,7 @@
     "lint": "tslint src/**/*.ts --fix",
     "lint:ci": "tslint src/**/*.ts",
     "test": "jest --watch",
-    "test:ci": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "e2e": "echo Not yet implemented"
   },
   "repository": {
