@@ -12,4 +12,8 @@
   overflow: hidden;
 
   @include shadow();
+
+  ::slotted(alr-title) {
+    text-align: center;
+  }
 }
