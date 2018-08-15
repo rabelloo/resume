@@ -48,9 +48,15 @@ const getContent = (file, extension) => {
   return read(file);
 };
 
+const ref = path => {
+  const folders = path.split('/');
+  const name = folders.pop();
+
+  return `${srcFolder}/${folders.join('/')}/${name}/${name}`;
+};
+
 const fileExists = file => fs.existsSync(path.resolve(file));
 const read = file => fs.readFileSync(path.resolve(file)).toString();
-const ref = name => `${srcFolder}/${name}/${name}`;
 const styleIs = (path, extension) => fileExists(`${path}.${extension}`) && extension;
 const whatStyle = path => styleIs(path, 'css')
                        || styleIs(path, 'scss')
