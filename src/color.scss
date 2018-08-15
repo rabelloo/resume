@@ -21,6 +21,17 @@
 }
 @mixin attr-color() {
   &[color="primary"] {
+    @include color-primary();
+  }
+  &[color="accent"] {
+    @include color-accent();
+  }
+  &[color="warn"] {
+    @include color-warn();
+  }
+}
+@mixin attr-bg-color() {
+  &[color="primary"] {
     @include bg-primary();
   }
   &[color="accent"] {

@@ -1,4 +1,5 @@
 @import '../color';
+@import '../shadow';
 
 :host {
   background-color: #e0e0e0;
@@ -17,7 +18,7 @@
   font-size: 13px;
   line-height: 18px;
 
-  @include attr-color();
+  @include attr-bg-color();
   @include shadow-transition();
 
   &[active] {
