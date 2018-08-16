@@ -16,13 +16,14 @@ body {
   --on-warn: rgba(255, 255, 255, .87);
 
   box-sizing: border-box;
+  * {
+    box-sizing: inherit;
+  }
+
   background: #fafafa;
   font: {
     family: Raleway, sans-serif;
     size: 14px;
   }
-  margin: 0 auto;
-  max-height: 297mm;
-  max-width: 210mm;
-  padding: 1rem;
+  margin: 0;
 }
