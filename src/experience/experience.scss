@@ -1,5 +1,15 @@
+@import '../list/list';
+
 :host {
   display: block;
+
+  ul {
+    display: inline-block;
+    
+    + .flex {
+      margin-top: .5rem;
+    }
+  }
 
   .flex {
     display: flex;
@@ -11,4 +21,6 @@
       line-height: 1rem;
     }
   }
+
+  @include list();
 }

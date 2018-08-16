@@ -1,3 +1,7 @@
+@import '../list/list';
+
 :host {
   display: block;
+
+  @include list();
 }
