@@ -1,0 +1,16 @@
+@mixin list() {
+  ul {
+    display: inline-block;
+    margin: .5rem 0;
+    padding-left: 16px;
+    text-align: justify;
+
+    li + li {
+      margin-top: .25rem;
+    }
+
+    + div {
+      margin-top: .5rem;
+    }
+  }
+}
