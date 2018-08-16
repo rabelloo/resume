@@ -1,0 +1,14 @@
+:host {
+  display: block;
+
+  .flex {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    small {
+      font-size: .8rem;
+      line-height: 1rem;
+    }
+  }
+}

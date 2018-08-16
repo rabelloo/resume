@@ -1,8 +1,13 @@
 :host {
   display: flex;
 
+  alr-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
   aside {
-    flex: 0 0 35%;
+    flex: 0 0 40%;
     margin-left: 1rem;
 
     * + * {
