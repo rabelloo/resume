@@ -2,6 +2,14 @@
   display: block;
 
   alr-card {
-    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    padding: 1rem;
+
+    alr-title {
+      width: 100%;
+    }
   }
 }
