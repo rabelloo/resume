@@ -3,14 +3,6 @@
 :host {
   display: block;
 
-  ul {
-    display: inline-block;
-    
-    + .flex {
-      margin-top: .5rem;
-    }
-  }
-
   .flex {
     display: flex;
     align-content: center;
