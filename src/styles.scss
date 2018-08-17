@@ -1,5 +1,6 @@
-@import './color/color';
-@import './shadow';
+@import './styles/color';
+@import './styles/box-sizing';
+@import './styles/shadow';
 
 body {
   --primary: #303f9f;
@@ -18,10 +19,7 @@ body {
   --on-accent-disabled: rgba(255, 255, 255, .38);
   --on-warn: rgba(255, 255, 255, .87);
 
-  box-sizing: border-box;
-  * {
-    box-sizing: inherit;
-  }
+  @include border-box();
 
   background-color: $background;
   font: {
