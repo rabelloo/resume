@@ -29,11 +29,6 @@ body {
   margin: 0;
 
   @media screen {
-    background-image: linear-gradient(180deg, var(--primary-light) 25%, $background 25%);
-
-    alr-resume {
-      @include shadow();
-      margin: 2rem auto;
-    }
+    background-image: linear-gradient(180deg, var(--primary-light) 30%, $background 30%);
   }
 }
