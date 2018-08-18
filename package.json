@@ -4,7 +4,7 @@
   "description": "Résumé in HTML with custom elements",
   "private": true,
   "scripts": {
-    "build": "webpack --mode production --source-map devtool",
+    "build": "webpack --mode production --devtool source-map",
     "start": "webpack-serve",
     "lint": "tslint src/**/*.ts --fix",
     "lint:ci": "tslint src/**/*.ts",
