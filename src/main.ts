@@ -7,6 +7,7 @@ import './github/github';
 import './languages/languages';
 import './linkedin/linkedin';
 import './mat-icon/mat-icon';
+import './progress/progress';
 import './resume/resume';
 import './skills/skills';
 import './title/title';
