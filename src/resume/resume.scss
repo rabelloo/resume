@@ -2,9 +2,14 @@
   background-color: #fff;
   display: flex;
   margin: 0 auto;
-  max-height: 297mm;
   max-width: 210mm;
-  padding: 1rem;
+  overflow: hidden;
+  padding: 2rem;
+
+  @media print {
+    max-height: 297mm;
+    padding: 4px;
+  }
 
   alr-title {
     font-size: 2rem;
@@ -13,7 +18,9 @@
   }
 
   aside {
-    flex: 0 0 40%;
+    $width: 40%;
+    flex: 0 0 $width;
+    max-width: $width;
     margin-left: 1rem;
 
     * + * {

@@ -24,4 +24,14 @@
   &[active] {
     @include shadow-only();
   }
+
+  @media print {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    
+    &[active] {
+      box-shadow: none;
+    }
+  }
 }

@@ -15,4 +15,11 @@
   }
 
   @include list();
+
+  @media print {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
