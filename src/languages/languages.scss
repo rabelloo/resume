@@ -1,3 +1,26 @@
 :host {
   display: block;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    alr-progress {
+      margin-left: 1rem;
+      max-width: 9rem;
+    }
+
+    @media screen {
+      legend {
+        display: none;
+      }
+    }
+
+    @media print {
+      alr-progress {
+        display: none;
+      }
+    }
+  }
 }
