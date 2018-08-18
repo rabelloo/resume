@@ -1,5 +1,6 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/main.ts',
@@ -11,19 +12,15 @@ module.exports = {
         test: /\.tsx?$/,
         use: [
           'ts-loader',
-          { loader: path.resolve('scripts/web-component.js'), },
+          { loader: path.resolve('scripts/web-component.js') },
         ],
         exclude: /node_modules/,
       },
       {
         test: /\.s[ac]ss$/,
-        use: [
-            'style-loader',
-            'css-loader',
-            'sass-loader',
-        ]
-    }
-    ]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -35,8 +32,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      favicon: './src/favicon.ico',
       hash: true,
     }),
+    new CopyWebpackPlugin([
+      { from: './src/assets', to: 'assets' },
+    ]),
   ],
   serve: {
     content: path.resolve(__dirname, 'dist'),
