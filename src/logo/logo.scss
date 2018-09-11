@@ -1,13 +1,7 @@
-@import '../styles/sizes';
-
 :host {
-  display: inline-block;
-
   $logo-size: 200px;
 
-  position: absolute;
-  bottom: $image-size / 2 + $font-size / 2;
-  left: -$logo-size - $font-size / 2;
+  display: inline-block;
   height: auto;
   width: $logo-size;
 }

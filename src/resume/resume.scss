@@ -32,9 +32,28 @@
       flex: 0 0 $width;
       max-width: $width;
       margin-left: 1rem;
+      order: 2;
 
       * + * {
         margin-top: 1rem;
+      }
+    }
+
+    @media screen and (max-width: 720px)  {
+      box-shadow: none;
+      flex-direction: column;
+
+      aside {
+        margin: {
+          left: 0;
+          top: 4.5rem;
+        }
+        max-width: none;
+        order: 0;
+      }
+
+      alr-education {
+        margin-top: 2rem;
       }
     }
 
