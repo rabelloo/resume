@@ -39,6 +39,17 @@
       }
     }
 
+    .footnote {
+      display: none;
+      position: absolute;
+      bottom: -2rem;
+      right: 0;
+
+      @media print {
+        display: inline-block;
+      }
+    }
+
     @media screen and (max-width: 720px)  {
       box-shadow: none;
       flex-direction: column;
