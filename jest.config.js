@@ -9,25 +9,20 @@ module.exports = {
       branches: 100,
       lines: 100,
       functions: 100,
-    }
+    },
   },
   globals: {
     'ts-jest': {
-      tsConfigFile: '../tsconfig.test.json'
-    }
+      tsConfigFile: '../tsconfig.test.json',
+    },
   },
-  moduleFileExtensions: [
-    "ts",
-    "js"
-  ],
+  moduleFileExtensions: ['ts', 'js'],
   rootDir: 'src', // acts as if file was inside /src folder
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
   testURL: 'http://localhost',
-  testMatch: [
-    '**/*.spec.ts'
-  ],
+  testMatch: ['**/*.spec.ts'],
   transform: {
-    '^.+\\.ts$': 'ts-jest'
+    '^.+\\.ts$': 'ts-jest',
   },
   verbose: true,
 };

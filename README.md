@@ -44,4 +44,4 @@ A few days from now I will probably have, as the saying goes, built a bazooka to
 - Secondly, learning about Web Components without framework guardrails
 - Thirdly, incrementally building on the résumé so that perhaps it can also be portfolio
 - Fourhtly, inject result into a more complete personal web page
-- Lastly, if results are good, mayhaps I've just built yet another Web Component framework (probably very lightweight in features)
+- Lastly, if results are good, ~~mayhaps I've just built yet another Web Component framework~~ --nope, lit-html and lit-element are lit indeed
