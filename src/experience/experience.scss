@@ -14,5 +14,11 @@
     }
   }
 
+  h3 {
+    display: inline-block;
+    font-size: .875rem;
+    margin: 0;
+  }
+
   @include list();
 }
