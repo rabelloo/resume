@@ -26,6 +26,7 @@
         &:before {
           content: '';
           background-color: var(--primary-light);
+          opacity: .87;
           height: 2px;
           position: absolute;
           bottom: -3px;
