@@ -21,7 +21,7 @@ describe('Component', () => {
   });
 
   it('should throw if config is null', () => {
-    expect(() => Component(null)).toThrow('WebComponent config is required');
+    expect(() => Component(null as any)).toThrow('WebComponent config is required');
   });
 
   it('should throw if config.template is falsey', () => {

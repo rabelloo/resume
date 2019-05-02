@@ -2,10 +2,10 @@ import { WebComponent } from '../web-component';
 import { attr } from './attr';
 
 describe('attr', () => {
-  const ref = {
+  const ref: WebComponent = {
     getAttribute: null,
     setAttribute: null,
-  } as WebComponent;
+  } as any;
 
   it('should get attribute if value is not passed', () => {
     const expected = 1;

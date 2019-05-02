@@ -15,7 +15,7 @@ describe('definition', () => {
 
     it('should return a new function that calls only the second function when the first is undefined', () => {
       const spy = jest.fn();
-      const result = monkeyPatch(undefined, spy);
+      const result = monkeyPatch(undefined as any, spy);
       result();
 
       expect(result).toEqual(expect.any(Function));
@@ -53,7 +53,9 @@ describe('definition', () => {
       const ref = { attachShadow: () => shadow } as any;
       const spyRef = spyOn(ref, 'attachShadow').and.callThrough();
       const spyShadow = spyOn(shadow, 'appendChild');
-      const spyElement = spyOn(element.content, 'cloneNode').and.returnValue(element);
+      const spyElement = spyOn(element.content, 'cloneNode').and.returnValue(
+        element
+      );
 
       expect(shadowDom(ref, element)).toBe(undefined);
       expect(spyRef).toHaveBeenCalledTimes(1);
@@ -71,7 +73,7 @@ describe('definition', () => {
     it('should define a new custom element', () => {
       window.customElements = { define: () => null } as any;
       const name = 'test-test';
-      const element = { } as any;
+      const element = {} as any;
       const spy = spyOn(customElements, 'define').and.returnValue(element);
 
       expect(webComponent(name, element)).toBe(undefined);

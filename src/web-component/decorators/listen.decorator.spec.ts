@@ -20,7 +20,7 @@ describe('Listen', () => {
     spyMonkeyPatch.mockImplementation((_, fn) => fn);
 
     const decorator = Listen(event);
-    decorator(prototype, key, null);
+    decorator(prototype, key, null as any);
     (prototype.init as any)(ref, event, ref[key]);
 
     expect(spyMonkeyPatch).toHaveBeenCalledTimes(1);

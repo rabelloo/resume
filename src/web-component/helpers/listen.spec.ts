@@ -2,9 +2,9 @@ import { WebComponent } from '../web-component';
 import { listen } from './listen';
 
 describe('listen', () => {
-  const ref = {
+  const ref: WebComponent = {
     addEventListener: null,
-  } as WebComponent;
+  } as any;
 
   it('should addEventListener to reference passed', () => {
     const event = 'click';

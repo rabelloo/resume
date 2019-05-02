@@ -3,11 +3,11 @@ import { WebComponent } from '../web-component';
 import { attrBoolean } from './attr-boolean';
 
 describe('attrBoolean', () => {
-  const ref = {
+  const ref: WebComponent = {
     hasAttribute: null,
     removeAttribute: null,
     setAttribute: null,
-  } as WebComponent;
+  } as any;
 
   it('should return attribute existence if value is not passed', () => {
     const expected = 1;
