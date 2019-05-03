@@ -21,7 +21,6 @@ install:
 before_script:
   - npm run lint:ci
   - npm run test:ci
-  - npm run e2e
 
 script:
   - npm run build
