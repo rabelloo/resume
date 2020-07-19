@@ -1,3 +1,4 @@
+os: linux
 language: node_js
 node_js:
   - node
@@ -10,7 +11,6 @@ cache:
   directories:
     - node_modules
 
-sudo: required
 dist: trusty
 addons:
   chrome: stable
@@ -28,7 +28,7 @@ script:
 
 deploy:
   - provider: firebase
-    skip_cleanup: true
+    cleanup: false
     token: $FIREBASE_TOKEN # Set in travis-ci.org dashboard
 
 notifications:
