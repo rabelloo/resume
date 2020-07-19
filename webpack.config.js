@@ -35,9 +35,9 @@ module.exports = {
       favicon: './src/favicon.ico',
       hash: true,
     }),
-    new CopyWebpackPlugin([
-      { from: './src/assets', to: 'assets' },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: './src/assets', to: 'assets' }],
+    }),
   ],
   serve: {
     content: path.resolve(__dirname, 'dist'),

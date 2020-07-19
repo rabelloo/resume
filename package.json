@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Résumé in HTML with custom elements",
   "author": "Andre Luiz Rabello <andre.luiz_r@hotmail.com>",
   "license": "MIT",
@@ -14,8 +14,9 @@
   "homepage": "https://github.com/rabelloo/resume#readme",
   "private": true,
   "scripts": {
-    "build": "webpack --mode production --devtool source-map",
     "start": "webpack-serve",
+    "build": "webpack --mode production --devtool source-map",
+    "prebuild": "rm -rf dist",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --coverage"
   },
