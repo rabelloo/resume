@@ -17,10 +17,11 @@ addons:
 
 install:
   - npm ci
+  - npm i coveralls --no-save
 
 before_script:
   - npm run lint
-  - npm run test:ci
+  - npx jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 script:
   - npm run build

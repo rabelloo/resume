@@ -1,10 +1,9 @@
-[![Build Status](https://travis-ci.org/rabelloo/resume.svg?branch=master)](https://travis-ci.org/rabelloo/resume)
-[![Coverage Status](https://coveralls.io/repos/github/rabelloo/resume/badge.svg?branch=master)](https://coveralls.io/github/rabelloo/resume?branch=master)
+# resume ~ [![Build Status](https://img.shields.io/travis/rabelloo/resume.svg?logo=travis)](https://travis-ci.org/rabelloo/resume) [![Coverage Status](https://img.shields.io/coveralls/github/rabelloo/resume.svg?logo=coveralls)](https://coveralls.io/github/rabelloo/resume)
 
-# resume
 Résumé in HTML with Web Components
 
 ## A little tale
+
 I wanted to update my résumé, but text editors were limiting my creativity and expression. :confused:
 
 I just figured I'd do it in HTML + CSS, after all, I'd have more control.
@@ -37,9 +36,10 @@ I cannot stand doing anything inefficiently. :confounded:
 I will always find a way to improve upon processes and tools.
 There's nothing I love more than learning something different to solve a new problem. :smile:
 
-A few days from now I will probably have, as the saying goes, built a bazooka to kill an ant. :rocket: :ant: 
+A few days from now I will probably have, as the saying goes, built a bazooka to kill an ant. :rocket: :ant:
 
 ## Goal
+
 - To build a résumé that looks good, first and foremost, as a .pdf file. If Chrome can render it so that I can print a one pager I'm good
 - Secondly, learning about Web Components without framework guardrails
 - Thirdly, incrementally building on the résumé so that perhaps it can also be portfolio

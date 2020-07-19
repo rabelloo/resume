@@ -2,40 +2,39 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "Résumé in HTML with custom elements",
-  "private": true,
-  "scripts": {
-    "build": "webpack --mode production --devtool source-map",
-    "start": "webpack-serve",
-    "lint": "tslint src/**/*.ts",
-    "test": "jest --watch",
-    "test:ci": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
-  },
+  "author": "Andre Luiz Rabello <andre.luiz_r@hotmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rabelloo/resume.git"
   },
-  "author": "Andre Luiz Rabello <andre.luiz_r@hotmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rabelloo/resume/issues"
   },
   "homepage": "https://github.com/rabelloo/resume#readme",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production --devtool source-map",
+    "start": "webpack-serve",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --coverage"
+  },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "copy-webpack-plugin": "^5.1.1",
-    "coveralls": "^3.0.11",
-    "css-loader": "^3.5.2",
-    "html-webpack-plugin": "^4.2.0",
-    "jest": "^25.3.0",
-    "sass": "^1.26.3",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.1.3",
-    "ts-jest": "^25.3.1",
-    "ts-loader": "^6.2.2",
-    "tslint": "^6.1.1",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-serve": "^2.0.3"
+    "@types/jest": "^26.0.5",
+    "copy-webpack-plugin": "^6.0.3",
+    "coveralls": "^3.1.0",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^26.1.3",
+    "ts-loader": "^8.0.1",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-serve": "^3.2.0"
   }
 }

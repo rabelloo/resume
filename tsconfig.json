@@ -1,13 +1,13 @@
 {
-  "include": [ "src/**/*" ],
-  "exclude": [ "src/**/*.spec.*" ],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.spec.*"],
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
 
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
-    "target": "es6",
+    "target": "es2018",
     "esModuleInterop": true,
     "sourceMap": true,
 
@@ -20,6 +20,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": false,
-    "strictNullChecks": true,
+    "strictNullChecks": true
   }
 }
