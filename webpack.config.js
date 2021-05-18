@@ -39,12 +39,4 @@ module.exports = {
       patterns: [{ from: './src/assets', to: 'assets' }],
     }),
   ],
-  serve: {
-    content: path.resolve(__dirname, 'dist'),
-    port: 4200,
-    clipboard: false,
-    hmr: true,
-    // http2: true,   // needs an SSL key configured
-    open: true,
-  },
 };
