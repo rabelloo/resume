@@ -8,7 +8,8 @@
   align-items: center;
 
   alr-card {
-    background-color: #fff;
+    background-color: var(--bg);
+    color: var(--on-bg);
     display: flex;
     margin: $image-size + $font-size auto 4rem;
     max-width: 210mm;

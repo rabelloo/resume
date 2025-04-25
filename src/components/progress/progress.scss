@@ -18,6 +18,9 @@
     right: 0;
 
     background-color: rgba(255, 255, 255, 0.5);
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(255, 255, 255, 0.75);
+    }
   }
 
   @for $i from 1 through 100 {

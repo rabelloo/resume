@@ -18,7 +18,7 @@
     }
 
     a {
-      color: $black;
+      color: var(--on-bg);
       text-decoration: none;
 
       span {

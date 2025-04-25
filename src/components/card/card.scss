@@ -1,8 +1,8 @@
 @import '../../styles/shadow';
 
 :host {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
+  background-color: var(--bg);
+  color: var(--on-bg);
 
   display: block;
   border-radius: 2px;

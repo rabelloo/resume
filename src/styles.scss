@@ -10,6 +10,7 @@ body {
   --accent-light: #4fb3bf;
   --accent-dark: #005662;
   --warn: #d32f2f;
+  --bg: #f5f5f5;
 
   --on-primary: rgba(255, 255, 255, 0.87);
   --on-primary-medium: rgba(255, 255, 255, 0.6);
@@ -18,10 +19,21 @@ body {
   --on-accent-medium: rgba(255, 255, 255, 0.6);
   --on-accent-disabled: rgba(255, 255, 255, 0.38);
   --on-warn: rgba(255, 255, 255, 0.87);
+  --on-bg: rgba(0, 0, 0, 0.87);
+
+  @media (prefers-color-scheme: dark) {
+    --bg: #36363b;
+    --primary: #8b9aff;
+    --primary-light: #7d81ff;
+    --primary-dark: #303268;
+
+    --on-bg: rgba(255, 255, 255, 0.87);
+  }
 
   @include border-box();
 
-  background-color: $background;
+  background-color: var(--bg);
+  color: var(--on-bg);
   font: {
     family: Raleway, sans-serif;
     size: 14px;
@@ -33,7 +45,16 @@ body {
       180deg,
       var(--primary) 0%,
       var(--primary-light) 30%,
-      $background 30%
+      var(--bg) 30%
     );
+
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(
+        180deg,
+        var(--primary-dark) 0%,
+        var(--primary) 30%,
+        var(--bg) 30%
+      );
+    }
   }
 }
