@@ -2,13 +2,11 @@
 logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Distributable files
 dist
 
-# Coverage directory used by tools like istanbul
+# Coverage directory used by coveralls
 coverage
 
 # Dependency directories
@@ -23,12 +21,6 @@ node_modules/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
 # dotenv environment variables file
 .env
 .vscode
-
-# next.js build output
-.next

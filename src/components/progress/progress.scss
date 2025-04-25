@@ -1,0 +1,28 @@
+@import '../../styles/color';
+
+:host {
+  display: inline-block;
+  position: relative;
+  height: 4px;
+  width: 240px;
+
+  background-color: #9e9e9e;
+
+  @include attr-bg-color();
+
+  div {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  @for $i from 1 through 100 {
+    &[amount='#{$i}'] div {
+      left: $i * 1%;
+    }
+  }
+}

@@ -36,7 +36,7 @@ module.exports = {
       hash: true,
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: './src/assets', to: 'assets' }],
+      patterns: [{ from: './assets', to: 'assets' }],
     }),
   ],
 };

@@ -2,7 +2,7 @@
 
 Résumé in HTML with Web Components
 
-## A little tale
+## A little tale (from past 2018 me)
 
 I wanted to update my résumé, but text editors were limiting my creativity and expression. :confused:
 
@@ -23,25 +23,31 @@ Geez, now I know why there are so many frameworks out there...
 let me code just a few helpers and a Webpack loader to make my life easier...
 oh hey, now I can't test anything anymore! On to refactoring! :stuck_out_tongue:
 
-Since this is pretty much a project now, might as well put it on Github, setup Travis and Firebase.
+Since this is pretty much a project now, might as well put it on Github, setup Travis and Firebase hosting.
 Hmm there was this Coveralls thing I was meaning to give a try, why not now? :satisfied:
 
 :running:
 
 Three days later, I can finally start doing what I wanted to in the first place. :+1:
 
-I guess that's pretty showing of who I am, even more than my résumé could ever point out.
+I guess that's pretty representative of who I am, even more than a résumé ever could convey.
 I cannot stand doing anything inefficiently. :confounded:
 
 I will always find a way to improve upon processes and tools.
-There's nothing I love more than learning something different to solve a new problem. :smile:
+There's nothing I love more than solving a problem while learning something new. :smile:
 
-A few days from now I will probably have, as the saying goes, built a bazooka to kill an ant. :rocket: :ant:
+I probably have, as the saying goes, built a bazooka to kill an ant. :rocket: :ant:
 
 ## Goal
 
-- To build a résumé that looks good, first and foremost, as a .pdf file. If Chrome can render it so that I can print a one pager I'm good
-- Secondly, learning about Web Components without framework guardrails
-- Thirdly, incrementally building on the résumé so that perhaps it can also be portfolio
-- Fourhtly, inject result into a more complete personal web page
-- Lastly, if results are good, ~~mayhaps I've just built yet another Web Component framework~~ --nope, lit-html and lit-element are lit indeed
+- To build a résumé that looks good, first and foremost, as a .pdf file
+- To learn about Web Components without framework guardrails
+- If results are good, ~~perhaps I've just built yet another Web Component framework~~ --nvm, there are much stronger options out there nowadays
+
+## Note from future me (year 2025)
+
+At the time, the tools I used were bleeding edge and modern alternatives were not yet available or popular.
+It was definitely a good exercise, and I'm proud of past me.
+Some of the decisions I made back then still hold, and a small amount I'd still make again today.
+However, today there are many better tools off the shelf that acomplish much more with much less effort.
+Building an actual portfolio website for myself is long overdue, but for the time being I find this resume/CV quite sufficient in demonstrating my ambition.

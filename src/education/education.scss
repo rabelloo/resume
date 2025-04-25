@@ -1,7 +1,0 @@
-@import '../styles/list';
-
-:host {
-  display: block;
-
-  @include list();
-}

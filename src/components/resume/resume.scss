@@ -1,0 +1,82 @@
+@import '../../styles/shadow';
+@import '../../styles/sizes';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  alr-card {
+    background-color: #fff;
+    display: flex;
+    margin: $image-size + $font-size auto 4rem;
+    max-width: 210mm;
+    overflow: visible;
+    padding: 2rem;
+    position: relative;
+
+    alr-title {
+      font-size: 2rem;
+      text-align: right;
+      margin-bottom: 1rem;
+
+      @media screen {
+        visibility: hidden;
+      }
+    }
+
+    aside {
+      $width: 40%;
+
+      flex: 0 0 $width;
+      max-width: $width;
+      margin-left: 1rem;
+      order: 2;
+
+      * + * {
+        margin-top: 1rem;
+      }
+    }
+
+    .footnote {
+      display: none;
+      position: absolute;
+      bottom: -2rem;
+      right: 0;
+
+      @media print {
+        display: inline-block;
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+      box-shadow: none;
+      flex-direction: column;
+
+      aside {
+        margin: {
+          left: 0;
+          top: 4.5rem;
+        }
+        max-width: none;
+        order: 0;
+      }
+
+      alr-education {
+        margin-top: 2rem;
+      }
+    }
+
+    @media print {
+      box-shadow: none;
+      max-height: 297mm;
+      margin: 0;
+      padding: 4px;
+
+      aside {
+        max-width: 35%;
+      }
+    }
+  }
+}

@@ -1,13 +1,12 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.spec.*"],
+  "include": ["src"],
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
 
     "module": "esnext",
     "moduleResolution": "node",
-    "target": "es2018",
+    "target": "es2020",
     "esModuleInterop": true,
     "sourceMap": true,
 

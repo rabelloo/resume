@@ -1,0 +1,14 @@
+@import '../../styles/color';
+
+:host {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+
+  @include attr-color();
+
+  h3 {
+    margin: 0;
+  }
+}

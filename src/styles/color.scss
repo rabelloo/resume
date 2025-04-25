@@ -1,5 +1,5 @@
 $background: #f5f5f5;
-$black: rgba(0, 0, 0, .87);
+$black: rgba(0, 0, 0, 0.87);
 
 @mixin bg-primary() {
   background-color: var(--primary);
@@ -23,24 +23,24 @@ $black: rgba(0, 0, 0, .87);
   color: var(--warn);
 }
 @mixin attr-color() {
-  &[color="primary"] {
+  &[color='primary'] {
     @include color-primary();
   }
-  &[color="accent"] {
+  &[color='accent'] {
     @include color-accent();
   }
-  &[color="warn"] {
+  &[color='warn'] {
     @include color-warn();
   }
 }
 @mixin attr-bg-color() {
-  &[color="primary"] {
+  &[color='primary'] {
     @include bg-primary();
   }
-  &[color="accent"] {
+  &[color='accent'] {
     @include bg-accent();
   }
-  &[color="warn"] {
+  &[color='warn'] {
     @include bg-warn();
   }
 }

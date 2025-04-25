@@ -1,8 +1,8 @@
-const fs = require('fs');
-const path = require('path');
-const sass = require('sass');
+const { existsSync, readFileSync } = require('fs');
+const { resolve } = require('path');
+const { renderSync } = require('sass');
 
-const srcFolder = 'src';
+const componentsFolder = 'src/components';
 
 module.exports = (source) =>
   source.replace(
@@ -13,7 +13,7 @@ module.exports = (source) =>
       }
 
       return `${prop}: \`${getContent(file, extension)}\``;
-    }
+    },
   );
 
 //////////////
@@ -31,10 +31,9 @@ const findFile = (prop, component) => {
 const getContent = (file, extension) => {
   if (/s[ac]ss/.test(extension)) {
     return wrapStyles(
-      sass
-        .renderSync({ file: path.resolve(file) })
+      renderSync({ file: resolve(file) })
         .css.toString()
-        .replace(/:host([^() ,{]+)/g, ':host($1)')
+        .replace(/:host([^() ,{]+)/g, ':host($1)'),
     );
   }
 
@@ -48,19 +47,16 @@ const getContent = (file, extension) => {
 const ref = (path) => {
   const folders = path.split('/');
   const name = folders.pop();
-
-  return `${srcFolder}/${folders.join('/')}/${name}/${name}`;
+  return [componentsFolder, ...folders, name, name].filter(Boolean).join('/');
 };
 
-const fileExists = (file) => fs.existsSync(path.resolve(file));
-const read = (file) => fs.readFileSync(path.resolve(file)).toString();
+const fileExists = (file) => existsSync(resolve(file));
+const read = (file) => readFileSync(resolve(file)).toString();
 
 const styleIs = (path, extension) =>
   fileExists(`${path}.${extension}`) && extension;
 
-// prettier-ignore
-const whatStyle = path => styleIs(path, 'css')
-                       || styleIs(path, 'scss')
-                       || styleIs(path, 'sass');
+const whatStyle = (path) =>
+  styleIs(path, 'css') || styleIs(path, 'scss') || styleIs(path, 'sass');
 
 const wrapStyles = (styles) => `<style>\n${styles}</style>`;

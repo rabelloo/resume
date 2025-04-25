@@ -11,13 +11,13 @@ body {
   --accent-dark: #005662;
   --warn: #d32f2f;
 
-  --on-primary: rgba(255, 255, 255, .87);
-  --on-primary-medium: rgba(255, 255, 255, .6);
-  --on-primary-disabled: rgba(255, 255, 255, .38);
-  --on-accent: rgba(255, 255, 255, .87);
-  --on-accent-medium: rgba(255, 255, 255, .6);
-  --on-accent-disabled: rgba(255, 255, 255, .38);
-  --on-warn: rgba(255, 255, 255, .87);
+  --on-primary: rgba(255, 255, 255, 0.87);
+  --on-primary-medium: rgba(255, 255, 255, 0.6);
+  --on-primary-disabled: rgba(255, 255, 255, 0.38);
+  --on-accent: rgba(255, 255, 255, 0.87);
+  --on-accent-medium: rgba(255, 255, 255, 0.6);
+  --on-accent-disabled: rgba(255, 255, 255, 0.38);
+  --on-warn: rgba(255, 255, 255, 0.87);
 
   @include border-box();
 
@@ -29,6 +29,11 @@ body {
   margin: 0;
 
   @media screen {
-    background-image: linear-gradient(180deg, var(--primary) 0%, var(--primary-light) 30%, $background 30%);
+    background-image: linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--primary-light) 30%,
+      $background 30%
+    );
   }
 }

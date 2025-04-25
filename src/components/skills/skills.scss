@@ -1,0 +1,19 @@
+:host {
+  display: block;
+
+  alr-card {
+    display: grid;
+    padding: 24px;
+    place-content: center;
+
+    h4 {
+      margin: 8px 0;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+}
