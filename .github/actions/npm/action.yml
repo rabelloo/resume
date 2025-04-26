@@ -8,3 +8,4 @@ runs:
         node-version-file: '.nvmrc'
         cache: 'npm'
     - run: npm ci
+      shell: bash
