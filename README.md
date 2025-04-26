@@ -1,4 +1,4 @@
-# resume ~ [![Build Status](https://img.shields.io/travis/rabelloo/resume.svg?logo=travis)](https://travis-ci.org/rabelloo/resume) [![Coverage Status](https://img.shields.io/coveralls/github/rabelloo/resume.svg?logo=coveralls)](https://coveralls.io/github/rabelloo/resume)
+# resume ~ [![Build](https://github.com/rabelloo/resume/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/rabelloo/resume/actions/workflows/build.yml) [![Coverage Status](https://img.shields.io/coveralls/github/rabelloo/resume.svg?logo=coveralls)](https://coveralls.io/github/rabelloo/resume)
 
 Résumé in HTML with Web Components
 
