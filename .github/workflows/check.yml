@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/npm
-      - run: npm run test
+      - run: npm run coverage
       - uses: coverallsapp/github-action@v2
 
   build:
