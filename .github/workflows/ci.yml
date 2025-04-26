@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    branches: [$default-branch]
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/npm
+      - run: npm run lint:prettier
+
+  tslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/npm
+      - run: npm run lint:ts
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/npm
+      - run: npm run test
+      - uses: coverallsapp/github-action@v2
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/npm
+      - run: npm run build
