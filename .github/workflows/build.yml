@@ -21,6 +21,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/npm
       - run: npm run build
       - uses: actions/configure-pages@v5

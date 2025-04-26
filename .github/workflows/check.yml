@@ -11,18 +11,21 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/npm
       - run: npm run lint:prettier
 
   tslint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/npm
       - run: npm run lint:ts
 
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/npm
       - run: npm run test
       - uses: coverallsapp/github-action@v2
@@ -30,5 +33,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/npm
       - run: npm run build
